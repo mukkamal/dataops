@@ -1,0 +1,4 @@
+src_schema.src_table|predicate|tgt_schema.tgt_table
+km_tables.km_testtable2||dw_admin.km_testtable2
+km_tables.km_testtable1|where id<2|dw_admin.km_testtable4
+dw_admin.redshift_qrylog_metrics_smry|where query_start_date=current_date -1|

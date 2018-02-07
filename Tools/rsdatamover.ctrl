@@ -1,0 +1,33 @@
+{
+  "unloadSource": {
+    "clusterEndpoint": "redshift.nerdwallet.com",
+    "clusterPort": 5439,
+    "connectPwd": "prod password",
+    "connectUser": "prod username",
+    "db": "dev",
+    "tablelist": "/Users/kmukkamala/git/dataops/Tools/rsdatamover.lst",
+    "delimiter": "\t"
+  },
+  "s3Staging": {
+    "aws_access_key_id": "access key for S3",
+    "aws_secret_access_key": "secret key for S3",
+    "s3_location": "s3://east1-prod-dwh-s3-0/",
+    "deleteOnSuccess": "True",
+    "region": "us-east-1"
+  },
+  "copyTarget": {
+    "clusterEndpoint": "redshift.nerdwallet.biz",
+    "clusterPort": 5439,
+    "connectPwd": "dev password",
+    "connectUser": "dev username",
+    "db": "dev",
+    "errorLimit": 10000
+  },
+  "logging": {
+    "logDir": "/Users/username/git/dataops/Tools",
+    "senderEmail":"youremail@nerdwallet.com",
+    "password":"",
+    "notifyEmail": ""
+  }
+}
+
